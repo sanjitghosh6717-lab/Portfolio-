@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sora:wght@100..800&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1a1a1d;
+  color: white;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+span {
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  padding: 1rem 5%;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+}
+.nav_links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.nav_links li a {
+  position: relative;
+  font-size: 1.05rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  color: transition;
+}
+.nav_links li a:hover {
+  color: #00ffff;
+  text-shadow: 0 0 10px #007070;
+}
+.btns {
+  display: flex;
+}
+.btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  background-color: #00ffff;
+  box-shadow: 0 0 8px #00ffff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #00e0e0;
+  box-shadow: 0 0 12px #00ffff;
+}
+img{
+  width: 100%;
+  display: flex;
+  border-radius: 100%;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-bottom:250px;
+}
+
+ 
+
+h1{
+  font-size: 60px;
+  line-height: 100%;
+  font-weight: 800px;
+  letter-spacing: -1px;
+  margin: 16px 0;
+  background: linear-gradient(90deg, #00f3f3 10%, #c1d1d1 60%);
+  background-clip: text;
+  color: transparent;
+}
+ p{
+  font-size: 16px;
+  line-height: 160%;
+ }
+ .button1{
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+ }
+  button.outline{
+    color: var(--accent-color);
+    background: var(--light-color);
+  }
+  main.left{
+    max-width: 50%;
+  }
+  main.right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+main .right img{
+  height: 600px;
+  object-fit: cover;
+  margin-left: 10rem;
+  position: relative;
+}
+main .bg-color{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+background-color: #00e0e0;
+right:600px;
+top:200px;
+z-index: -1;
+border-radius: 50%;
+filter: blur(115px);
+
+
+}
+@media (max-width: 480px) {
+  .nav_bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav_links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  main{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .right img {
+    margin-top: 20px;
+  }
+}
+
+
